@@ -4,44 +4,143 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Movies</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
   </head>
 
-  <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="movies.html">Movies</a></li>
-          <li><a href="series.html">Series</a></li>
-          <li><a href="music.html">Music</a></li>
-        </ul>
-      </nav>
-    </header>
+  <body class="bg-dark text-light">
 
-    <main>
-      <p>Film 1</p>
-      <p>Utgivningsår:</p>
-      <p>Skådespelare:</p>
-      <p>IMDB-länk:</p>
-      <p>Genre:</p>
+  
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black shadow">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">🎬 Movies</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link active" href="movies.html">Movies</a></li>
+            <li class="nav-item"><a class="nav-link" href="series.html">Series</a></li>
+            <li class="nav-item"><a class="nav-link" href="music.html">Music</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-      <p>Film 2</p>
-      <p>Utgivningsår:</p>
-      <p>Skådespelare:</p>
-      <p>IMDB-länk:</p>
-      <p>Genre:</p>
+    
+    <main class="container py-5">
+      <h1 class="text-center mb-5">🎥 Mina 3 favoritfilmer</h1>
 
-      <p>Film 3</p>
-      <p>Utgivningsår:</p>
-      <p>Skådespelare:</p>
-      <p>IMDB-länk:</p>
-      <p>Genre:</p>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+
+       
+        <div class="col">
+          <div class="card h-100 text-center bg-secondary text-light shadow">
+            <img src="film1.jpg" class="card-img-top img-fluid" alt="The RIP">
+            <div class="card-body">
+              <h5 class="card-title">The RIP</h5>
+              <p class="card-text">En grupp poliser i Miami hittar en gömma med miljoner i kontanter under en räd, vilket utlöser paranoia, korruption och svek inom teamet.</p>
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#modalRIP">Mer info</button>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="col">
+          <div class="card h-100 text-center bg-secondary text-light shadow">
+            <img src="film2.jpg" class="card-img-top img-fluid" alt="Bird Box">
+            <div class="card-body">
+              <h5 class="card-title">Bird Box</h5>
+              <p class="card-text">Handlar om en kvinna som försöker rädda sig själv och två barn från osynliga väsen som får människor att begå självmord om de ser dem.</p>
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#modalBirdBox">Mer info</button>
+            </div>
+          </div>
+        </div>
+
+       
+        <div class="col">
+          <div class="card h-100 text-center bg-secondary text-light shadow">
+            <img src="film3.jpg" class="card-img-top img-fluid" alt="Ted">
+            <div class="card-body">
+              <h5 class="card-title">Ted</h5>
+              <p class="card-text">En komedi om John Bennett som barn önskade att hans nallebjörn skulle bli levande – och den blir det!</p>
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#modalTed">Mer info</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </main>
-    <footer>
-      <p>© 2026</p>
+
+    
+    <div class="modal fade" id="modalRIP" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content bg-dark text-light">
+          <div class="modal-header">
+            <h5 class="modal-title">The RIP</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <p><strong>Utgivningsår:</strong> 2019</p>
+            <p><strong>Skådespelare:</strong> John Doe, Jane Smith, Mark Johnson</p>
+            <p>En grupp poliser i Miami hittar en gömma med miljoner i kontanter under en räd, vilket utlöser paranoia, korruption och svek inom teamet.</p>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" data-bs-dismiss="modal">Stäng</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modalBirdBox" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content bg-dark text-light">
+          <div class="modal-header">
+            <h5 class="modal-title">Bird Box</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <p><strong>Utgivningsår:</strong> 2018</p>
+            <p><strong>Skådespelare:</strong> Sandra Bullock, Trevante Rhodes, John Malkovich</p>
+            <p>Handlar om en kvinna som försöker rädda sig själv och två barn från osynliga väsen som får människor att begå självmord om de ser dem.</p>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" data-bs-dismiss="modal">Stäng</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modalTed" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content bg-dark text-light">
+          <div class="modal-header">
+            <h5 class="modal-title">Ted</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <p><strong>Utgivningsår:</strong> 2012</p>
+            <p><strong>Skådespelare:</strong> Mark Wahlberg, Mila Kunis, Seth MacFarlane (röst för Ted)</p>
+            <p>En komedi om John Bennett som barn önskade att hans nallebjörn skulle bli levande – och den blir det!</p>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" data-bs-dismiss="modal">Stäng</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <footer class="bg-black text-center py-3 mt-5">
+      <p class="mb-0">© 2026 Movies Page</p>
     </footer>
-    <script src="init.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

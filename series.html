@@ -3,45 +3,92 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tv-Series</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>TV Series</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
   </head>
 
-  <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="movies.html">Movies</a></li>
-          <li><a href="series.html">Series</a></li>
-          <li><a href="music.html">Music</a></li>
-        </ul>
-      </nav>
-    </header>
+  <body class="bg-dark text-light">
 
-    <main>
-      <p>Series 1</p>
-      <p>Utgivningsår:</p>
-      <p>Skådespelare:</p>
-      <p>IMDB-länk:</p>
-      <p>Genre:</p>
+   
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black shadow">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">📺 TV Series</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="movies.html">Movies</a></li>
+            <li class="nav-item"><a class="nav-link active" href="series.html">Series</a></li>
+            <li class="nav-item"><a class="nav-link" href="music.html">Music</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-      <p>Series 2</p>
-      <p>Utgivningsår:</p>
-      <p>Skådespelare:</p>
-      <p>IMDB-länk:</p>
-      <p>Genre:</p>
+    
+    <main class="container py-5">
+      <h1 class="text-center mb-5">🔥 Populära TV-serier</h1>
 
-      <p>Series 3</p>
-      <p>Utgivningsår:</p>
-      <p>Skådespelare:</p>
-      <p>IMDB-länk:</p>
-      <p>Genre:</p>
+      <div class="row g-4">
+
+        
+        <div class="col-md-6 col-lg-4">
+          <div class="card bg-secondary text-light h-100 shadow">
+            <div class="card-body">
+              <h5 class="card-title">La casa de papel</h5>
+              <p><strong>Utgivningsår:</strong> 2017</p>
+              <p><strong>Skådespelare:</strong> Álvaro Morte, Úrsula Corberó</p>
+              <p><strong>Genre:</strong> Drama</p>
+              <a href="https://www.imdb.com/title/tt6468322/" class="btn btn-outline-light btn-sm">IMDB</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </main>
-    <footer>
-      <p>© 2026</p>
+
+    <footer class="bg-black text-center py-3 mt-5">
+      <p class="mb-0">© 2026 TV Series Page</p>
     </footer>
-    <script src="init.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
+        <div class="col-md-6 col-lg-4">
+          <div class="card bg-secondary text-light h-100 shadow">
+            <div class="card-body">
+              <h5 class="card-title">Breaking Bad</h5>
+              <p><strong>Utgivningsår:</strong> 2005</p>
+              <p><strong>Skådespelare:</strong> Bryan Cranston, Aaron Paul</p>
+              <p><strong>Genre:</strong> Thriller, drama</p>
+              <a href="https://www.imdb.com/title/tt0903747/" class="btn btn-outline-light btn-sm">IMDB</a>
+            </div>
+          </div>
+        </div>
+
+       
+        <div class="col-md-6 col-lg-4">
+          <div class="card bg-secondary text-light h-100 shadow">
+            <div class="card-body">
+              <h5 class="card-title">Prison Break</h5>
+              <p><strong>Utgivningsår:</strong> 2005</p>
+              <p><strong>Skådespelare:</strong> Michael Scofield</p>
+              <p><strong>Genre:</strong> Thriller</p>
+              <a href="https://www.imdb.com/title/tt0455275/" class="btn btn-outline-light btn-sm">IMDB</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </main>
+
+ 
+    <footer class="bg-black text-center py-3 mt-5">
+      <p class="mb-0">© 2026 TV Series Page</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
